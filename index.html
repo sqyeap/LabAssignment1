@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <title>My Resume</title>
+</head>
+
+<style>
+    header {
+        text-align: center;
+        color: white;
+        font-weight: bold;
+        background-image: url('header.png');
+    }
+
+    .navibar {
+        width: 100%;
+        overflow: auto;        
+        color: white;
+        background-color: rgb(0, 0, 115);
+    }
+
+    .navibar a {
+        text-align: center;
+        width: 24.5%;
+    }
+
+    body {
+        background-color: rgb(239, 239, 239);
+    }
+
+    footer {
+        text-align: center;
+        width: 100%;
+        bottom: 0;
+        color: black;
+        background-color: rgb(0, 0, 115);
+    }
+</style>
+
+<body>
+    <header class="w3-header w3-container w3-padding-32">
+        <h1>My Resume</h1>
+    </header>
+
+    <div class="navibar">
+        <a href="#" class="w3-bar-item w3-button w3-hide-small">Profile</a>
+        <a href="#" class="w3-bar-item w3-button w3-hide-small">Educations</a>
+        <a href="#" class="w3-bar-item w3-button w3-hide-small">Skills</a>
+        <a href="#" class="w3-bar-item w3-button w3-hide-small">Projects</a>
+    </div>
+
+    <div>
+        <a href="javascript:void(0)"
+           onclick="sideMenu()"
+           style="color: black; background-color: blue; text-align: right;"
+           class="w3-bar w3-button w3-right w3-hide-large w3-hide-medium">&#9776</a>
+    </div>
+
+    <div id="idsidebar" class="w3-bar-block w3-blue w3-hide w3-hide-large w3-hide-medium">
+        <a href="#" class="w3-bar-item w3-button w3-center">Profile</a>
+        <a href="#" class="w3-bar-item w3-button w3-center">Educations</a>
+        <a href="#" class="w3-bar-item w3-button w3-center">Skills</a>
+        <a href="#" class="w3-bar-item w3-button w3-center">Projects</a>
+    </div>
+
+    <div class="w3-row">
+        <div class="w3-col s4 w3-center">
+            <img src="profilepic.png" alt="passport picture"
+            style="width: 50%; height: 50%; border-radius: 40px;"
+            class="w3-padding">
+        </div>
+        <div class="w3-col s8 w3-padding-32">
+            <h3><b>Profile</b></h3>
+            <p>Description of my profile:</p>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+                sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+                Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
+                Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+            </p>
+        </div>
+    </div>
+
+    <div class="w3-row">
+        <div class="w3-col s4">
+            <div>
+                <h3 class="w3-center"><b>Educations</b></h3>
+            </div>
+            <div>
+                <ul>
+                    <li>
+                        <b>Secondary Education</b>
+                        <br>2013-2018
+                        <br>SMJK Krian
+                        <br>Parit Buntar, Perak
+                        <br>Results
+                    </li>
+                    <li>
+                        <b>Pre-University Education</b>
+                        <br>2019-2020
+                        <br>Matriculation College Negeri Sembilan (KMNS)
+                        <br>Kuala Pilah, Negeri Sembilan
+                        <br>Results
+                    </li>
+                    <li>
+                        <b>Tertiary Education</b>
+                        <br>2021-Present
+                        <br>Universiti Utara Malaysia (UUM)
+                        <br>Sintok, Kedah
+                        <br>Results
+                    </li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="w3-col s4">
+            <div>
+                <h3 class="w3-center"><b>Skills</b></h3>
+            </div>
+            <div>
+                <ul>
+                    <li>Able to speak in English, Chinese and Malay</li>
+                    <li>Verbal communication and relation building skills</li>
+                    <li>
+                        Programming languages:
+                        <br>Java
+                        <br>HTML
+                        <br>MySQL
+                    </li>
+                    <li>King's Scout (Batch 2018)</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="w3-col s4">
+            <div>
+                <h3 class="w3-center"><b>Projects</b></h3>
+            </div>
+            <div>
+                <ul>
+                    <li>Customer Registration System</li>
+                    <li>Badminton Court Booking System</li>
+                    <li>Grocery Items Runner System</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>
+            Copyright &copy;
+        </p>
+    </footer>
+</body>
+
+<script>
+    function sideMenu() {
+        var x = document.getElementById("idsidebar");
+        if (x.className.indexOf("w3-show") == -1) {
+            x.className += " w3-show";
+        } else {
+            x.className = x.className.replace("w3-show", "");
+        }
+    }
+</script>
+
+</html>
